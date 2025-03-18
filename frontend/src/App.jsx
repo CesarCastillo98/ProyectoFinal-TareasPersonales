@@ -1,4 +1,6 @@
 import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/navbar/Navbar";
+import { Container } from "./components/ui";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import LoginPage from "./pages/LoginPage";
@@ -8,9 +10,11 @@ import TaskFormPage from "./pages/TaskFormPage";
 import ProfilePage from "./pages/ProfilePage";
 import NotFound from "./pages/NotFound";
 
-
 function App() {
   return (
+    <>
+      <Navbar />
+      <Container className="py-5">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -23,6 +27,8 @@ function App() {
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      </Container>
+    </>
   );
 }
 
