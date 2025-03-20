@@ -19,3 +19,6 @@ CREATE TABLE users(
 );
 
 ALTER TABLE users ADD COLUMN gravatar VARCHAR(255);
+
+
+postgresql://postgres:DrQOlKwIXlbmCueTwamLhqkEEINplYiX@ballast.proxy.rlwy.net:21213/railway
