@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 //rutas
-app.get("/", (req, res) => res.json({ message: "Bienvenido a mi API" }));
+app.get("/", (req, res) => res.json({ message: "Welcome Server Online" }));
 app.use("/api", taskRoutes);
 app.use("/api", authRoutes);
 
