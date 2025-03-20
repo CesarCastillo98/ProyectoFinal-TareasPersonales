@@ -3,7 +3,7 @@ import  {GiPlagueDoctorProfile} from 'react-icons/gi'
 
 export const publicRoutes=[
   {
-    name: "Sobre Mi",
+    name: "Acerca De",
     path: "/about",
   },
   {

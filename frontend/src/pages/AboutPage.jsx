@@ -3,16 +3,15 @@ function AboutPage() {
     <div>
       <h1 className="text-3xl font-bold my-4">Sobre Mi</h1>
       <p className="my-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-        suscipit maiores sapiente quae quibusdam quaerat facilis, laboriosam
-        vitae accusamus dolores ex temporibus nihil excepturi placeat tenetur.
-        Dolor facilis nemo quaerat?
+        ¡Hola! Soy un desarrollador en formación con ganas de aprender y mejorar
+        cada día. Esta es mi primera aplicación de gestión de tareas, un
+        proyecto que me ha permitido explorar tecnologías como JavaScript,
+        Node.js y bases de datos. Aunque estoy comenzando en este mundo, cada
+        línea de código es un paso más en mi camino como programador.
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-        suscipit maiores sapiente quae quibusdam quaerat facilis, laboriosam
-        vitae accusamus dolores ex temporibus nihil excepturi placeat tenetur.
-        Dolor facilis nemo quaerat?
+        Siempre estoy abierto a mejorar, recibir feedback y seguir creando
+        nuevas soluciones.
       </p>
     </div>
   );

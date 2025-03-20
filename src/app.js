@@ -4,15 +4,13 @@ import cookieParser from "cookie-parser";
 import taskRoutes from "./routes/task.routes.js";
 import authRoutes from "./routes/auth.routes.js";
 import cors from "cors";
-import { ORIGIN } from "./config.js";
-import { pool } from "./db.js";
 
 const app = express();
 
 //middlewares
 app.use(
   cors({
-    origin: ORIGIN,
+    origin:'http://localhost:5173',
     credentials:true,
   })
 );
@@ -23,10 +21,6 @@ app.use(express.urlencoded({ extended: false }));
 
 //rutas
 app.get("/", (req, res) => res.json({ message: "Bienvenido a mi API" }));
-app.get("/api/ping",async (req, res) => {
-  const result = await pool.query("SELECT NOW()");
-  return res.json(result.rows[0])
-});
 app.use("/api", taskRoutes);
 app.use("/api", authRoutes);
 
